@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_3" directorySegmentName="seg_0" id="A4A1CC41-F441-F9C0-C897-4478AB0167C6">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-18 05:40:41 UTC</createdTime>
+<ownerDesignName>tugas izul</ownerDesignName>
+<engineerTo>
+<item key="8527FEB1-D765-17B8-389E-CFFAACA4D4CF" value="true"/>
+</engineerTo>
+<sourcePk>3093F82D-2F76-64D6-BA87-1B13C917C6B9</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>tercatat di</nameOnSource>
+<nameOnTarget>merupakan job dari</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>223F5F4D-7D36-3840-46D3-E1B0820C6F00</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A25AC5D9-7A9C-E71C-288F-3BE19B6780B4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

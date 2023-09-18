@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A25AC5D9-7A9C-E71C-288F-3BE19B6780B4" name="job_history">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-18 05:14:14 UTC</createdTime>
+<ownerDesignName>tugas izul</ownerDesignName>
+<engineerTo>
+<item key="8527FEB1-D765-17B8-389E-CFFAACA4D4CF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Job_History_id" id="C83F7A90-01DE-60DD-996B-2260B1A686CC">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-18 05:17:12 UTC</createdTime>
+<ownerDesignName>tugas izul</ownerDesignName>
+<engineerTo>
+<item key="8527FEB1-D765-17B8-389E-CFFAACA4D4CF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="date_begin" id="8AFB892A-37D4-1007-EB73-E9B514133811">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-18 05:18:14 UTC</createdTime>
+<ownerDesignName>tugas izul</ownerDesignName>
+<engineerTo>
+<item key="8527FEB1-D765-17B8-389E-CFFAACA4D4CF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="date_end" id="3BD7DAA6-5B17-A5A1-48B1-30734632EC9B">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-18 05:18:47 UTC</createdTime>
+<ownerDesignName>tugas izul</ownerDesignName>
+<engineerTo>
+<item key="8527FEB1-D765-17B8-389E-CFFAACA4D4CF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="description" id="FA7751C4-C332-F0E9-8E2B-661D1488F01E">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-18 05:20:02 UTC</createdTime>
+<ownerDesignName>tugas izul</ownerDesignName>
+<engineerTo>
+<item key="8527FEB1-D765-17B8-389E-CFFAACA4D4CF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Job_id" id="25BF4657-0CBD-9E9A-9342-4969075043EF">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-18 05:33:57 UTC</createdTime>
+<generatorID>A572D15F-07BF-9489-BC85-AF18C7272927</generatorID>
+<ownerDesignName>tugas izul</ownerDesignName>
+<engineerTo>
+<item key="8527FEB1-D765-17B8-389E-CFFAACA4D4CF" value="true"/>
+</engineerTo>
+<referedAttribute>E8BB49B4-E481-B07C-3160-41AB2AA640AE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="employee_id" id="024CE222-7DD1-2AF0-B48A-102F8B8B3CE5">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-18 05:40:41 UTC</createdTime>
+<generatorID>A4A1CC41-F441-F9C0-C897-4478AB0167C6</generatorID>
+<ownerDesignName>tugas izul</ownerDesignName>
+<engineerTo>
+<item key="8527FEB1-D765-17B8-389E-CFFAACA4D4CF" value="true"/>
+</engineerTo>
+<referedAttribute>5DC72A37-8994-E9A6-5E0C-156DE98BE93A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E8C4ED9D-2E27-DF80-B43F-63997D4A4420" name="employee PK">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-18 05:18:09 UTC</createdTime>
+<ownerDesignName>tugas izul</ownerDesignName>
+<engineerTo>
+<item key="8527FEB1-D765-17B8-389E-CFFAACA4D4CF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C83F7A90-01DE-60DD-996B-2260B1A686CC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

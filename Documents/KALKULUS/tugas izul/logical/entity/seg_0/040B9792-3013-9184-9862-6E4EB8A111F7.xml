@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="040B9792-3013-9184-9862-6E4EB8A111F7" name="dibuat oleh">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-18 05:50:40 UTC</createdTime>
+<ownerDesignName>tugas izul</ownerDesignName>
+<engineerTo>
+<item key="8527FEB1-D765-17B8-389E-CFFAACA4D4CF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="MUHAMMAD ROISUL AMIN" id="A99C4465-08D9-63CA-B2EE-A74A88DB91F4">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-18 05:50:56 UTC</createdTime>
+<ownerDesignName>tugas izul</ownerDesignName>
+<engineerTo>
+<item key="8527FEB1-D765-17B8-389E-CFFAACA4D4CF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="22090112" id="FC4FD44B-2FE1-2D69-51F5-B2410A1F03DE">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-18 05:51:09 UTC</createdTime>
+<ownerDesignName>tugas izul</ownerDesignName>
+<engineerTo>
+<item key="8527FEB1-D765-17B8-389E-CFFAACA4D4CF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="kelas 3 B" id="70569EC3-57C5-454B-B618-1F9BBD40F702">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-18 05:51:24 UTC</createdTime>
+<ownerDesignName>tugas izul</ownerDesignName>
+<engineerTo>
+<item key="8527FEB1-D765-17B8-389E-CFFAACA4D4CF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>
