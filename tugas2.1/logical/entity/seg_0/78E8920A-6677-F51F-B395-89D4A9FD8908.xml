@@ -1,0 +1,184 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="78E8920A-6677-F51F-B395-89D4A9FD8908" name="Nama Latin">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:15:03 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ARABICA" id="5AA4CA47-DCE8-B9C6-1DF4-A70A6056A67E">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:15:27 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CANEPHORA" id="693A4F67-B769-FBFA-F403-9F42586ACE01">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:15:43 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LIBERICA" id="D7A7D3E2-77E5-9BA8-0F63-4B879BD4AAC7">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:15:50 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EXSELCIA" id="A12780EA-FA45-5BB9-6D2F-9D9FA5786C25">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:15:55 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MARGOGRIPE" id="F5A3B70F-C400-B8F7-25BA-222427C26244">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:16:03 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="1 BEAN" id="6EC758E5-2B34-F207-12AD-B5D8BB89CA78">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:16:12 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VAR GEISHA" id="0EF07A1C-5BB9-F683-77D4-04C76BFFF4DC">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:16:24 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BLUE MONTAIN" id="23AD2FD5-7735-F02C-BF5B-76B2DE87B589">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:16:29 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VAR KONA" id="7D167946-65A1-AF17-4DA4-186224019644">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:16:40 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VAR JAVA" id="DFA8132C-F55C-7940-3DA8-5F43CD45A352">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:16:53 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VAR KONA_1" id="B0D22035-0C3C-012F-711F-A20434E1E1AE">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:16:57 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VAR SUMATRA" id="8D2FF3BF-D1DF-0BE2-A62A-73BBDE0CFE81">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:17:00 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VAR FLORES" id="8198C647-4C80-4827-CB62-C4CDD053455A">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:17:04 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SULAWESI" id="599CF18C-BE0E-ADCA-192A-F31CEA97C7FD">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:17:17 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BANDUNG" id="D609FB1D-918C-80DE-071B-99BFAC231CDD">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:17:25 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

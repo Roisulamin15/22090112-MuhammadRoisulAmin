@@ -1,0 +1,184 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F37B9DE0-8DB3-82C2-1CED-D476718A6514" name="Market Cap">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:17:51 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="INTERNASIONAL" id="48EB72A6-0D78-85A3-2855-8327F2D3A0E7">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:18:09 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="INTERNASIONAL_1" id="BCBCBC86-099F-78A7-CEB8-2F8DE2DBEEF7">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:18:21 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="INTERNASIONAL_2" id="C2CA18AD-4AB7-9256-3BF3-1B7AF1DC5923">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:18:23 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="INTERNASIONAL_3" id="2BC9A140-B910-AB64-EFB2-4D33802D5FEA">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:18:25 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="INTERNASIONAL_4" id="7FDAAB96-71FC-7536-ABDF-F48DE2B0A98B">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:18:26 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="INTERNASIONAL_5" id="60A8F9F9-91C8-64A7-EC01-6D354BC2F7F7">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:18:33 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="INTERNASIONAL_6" id="8563F5AB-1C2E-DE3F-BDBA-BD4B4EFD20D4">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:18:34 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="INTERNASIONAL_7" id="6A3A9ED7-44A8-8377-EAD6-054895D037A1">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:18:36 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="INTERNASIONAL_10" id="70047058-F97A-1335-7C00-F47B44E197DF">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:18:37 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="INTERNASIONAL_8" id="C4CD2186-FC99-71B3-F9EE-499C885205B9">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:18:39 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="INTERNASIONAL_9" id="F6407688-E3CC-51B3-F603-C795636D03B2">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:18:45 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Attribute_12" id="C32B6D0B-CDD9-9E1E-1483-AFB59DBD5894">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:18:46 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NASIONAL" id="CCADEA2D-D5B9-5C05-8EE6-72BC66BA76DA">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:18:54 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NASIONAL_1" id="B854F7B0-2520-B966-B073-3394ABCE9E89">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:19:02 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NASIONAL_2" id="30B79F46-D6F5-F3D4-18E8-F0E91FC41ECF">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:19:05 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

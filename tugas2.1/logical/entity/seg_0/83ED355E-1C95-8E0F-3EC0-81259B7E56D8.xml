@@ -1,0 +1,184 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="83ED355E-1C95-8E0F-3EC0-81259B7E56D8" name="Harga Kopi">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:11:34 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="5$" id="722D4A4B-12F1-7F50-6F4C-8E1E5CC73BC9">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:11:58 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="10$" id="04EC465C-561A-E80A-7A91-0EB78180B8F8">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:12:04 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="4$" id="E8C4AC56-6424-B311-5E6E-F3A2D50246F6">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:12:30 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="6$" id="37F55F9B-7341-753B-3371-5D30FB806E7D">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:12:35 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="5$_2" id="8C74D197-C2B5-239C-A86C-C4A3B34BC576">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:12:41 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="6$_2" id="967ADD0C-8D8E-E24E-455E-4D2DC0089C90">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:12:50 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="3$" id="CEF7BDE9-B9AE-E03E-DA30-24CCD4E4E14B">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:13:02 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="4$_2" id="850C74B5-2245-0C3E-2777-AC955B1ED5F1">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:13:07 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="7$" id="81670920-D2D3-D9E0-31C3-A4FCEF7FE119">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:13:11 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="17$" id="F3D47935-7ED0-D5CE-D060-65F354A398FC">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:13:14 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="2$" id="8CAD0F1E-DBAB-1405-6756-5EF798478A17">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:13:41 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="1$" id="D2D06025-A6DF-4476-BFA6-5A30076EA6F1">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:13:48 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="9$" id="42811114-BCFB-80E2-CE7E-166294018418">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:13:53 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="11$" id="D814BCF1-FB50-167A-C5E2-11938EC3BB11">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:14:00 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="12$" id="E92E14FC-DB20-AB94-4E38-DB278ACFBE2D">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:14:05 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

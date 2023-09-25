@@ -1,0 +1,184 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2BDCE72E-DFBB-DF98-3D4C-8A8C11F3653C" name="Asal Kopi">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:07:15 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="BRAZIL" id="D202F940-8644-7A0F-D095-88B8470161B3">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:08:40 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CANADA" id="C988C9BC-D064-3FEF-C16A-E9DD02FE0856">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:08:46 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BELGIUM" id="40A4CA61-71B7-FD9C-7417-FA6E75E5E173">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:08:51 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AFRIKA" id="3856FC20-350B-FEEF-8008-6DB575EDDC65">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:08:56 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FRANCIS" id="E681251E-CEA6-F3B0-B4C7-18BB37929D15">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:09:01 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="KONOHA" id="B2C7B56D-F676-FFB9-A694-EC51AAC9451C">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:09:06 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SUMATRA" id="40CC89B9-280B-5D7E-FEB0-5F57C1434928">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:09:14 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SULAWESI" id="E4E29CA9-997D-64D1-EB2F-17DFAA2782DB">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:09:20 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BANDUNG" id="F3FDBA2B-5304-BF58-C128-31F795CCCD26">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:09:30 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="UTHOPIA" id="3B1A70F3-3C56-733E-D326-D9EFFAF64D6A">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:09:50 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="KENYA" id="737F7F89-AB06-744E-354D-5B24AF2108AA">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:09:56 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="JAWA" id="3E560FA3-C1E7-F4F2-607C-706FD898CACD">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:09:59 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BALI" id="671139A4-1A9C-EE26-4555-2F572CBBD56B">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:10:46 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AMERIKA" id="47ADF3F4-21B0-52C0-485A-53FA318A8F45">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:11:09 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BRAZIL_1" id="C7BC2AFA-99EA-529B-5E20-B307DC1CCE60">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:11:14 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

@@ -1,0 +1,184 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4B1F11A2-3773-43B6-7D9F-7F1D11FB4E51" name="IKLIM">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:20:34 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="IKLIM PANAS" id="D17B9691-F7E9-5402-85BF-47D197333BB1">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:20:51 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IKLIM PANAS_1" id="D6258B93-51B1-1E96-DBB4-E2E1759A91F2">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:21:18 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IKLIM PANAS_2" id="3A8420D9-01E0-72E7-1D26-11653808073A">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:21:20 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IKLIM PANAS_3" id="10C2D3DA-AA88-6C3B-D0E5-A0ADB4A7E57E">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:21:22 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IKLIM PANAS_4" id="DDA54414-2F39-CA4C-C336-3146134DB954">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:21:24 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IKLIM PANAS_5" id="5E8781EA-FEED-32D2-F706-940253B4B983">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:21:29 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IKLIM PANAS_6" id="BBF6A419-BEA1-99C5-E34F-A264DBB76528">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:21:31 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IKLIM PANAS_7" id="8F7546BC-9095-5758-81CA-9592AD663074">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:21:32 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IKLIM PANAS_8" id="4CA3BAE9-EAA3-9B33-5E28-8EF8A19273C0">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:21:34 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IKLIM PANAS_9" id="8B233EF1-2679-0C8F-5DE4-BD231C348461">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:21:36 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IKLIM PANAS_10" id="8E0A78CE-3BD5-C2D5-9E5D-38595A60D23E">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:21:37 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IKLIM DINGIN" id="B7B1C7D7-38EF-4CA3-9FAF-CF40CF547A7A">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:21:39 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IKLIM DINGIN_1" id="2614E1C5-30F0-D9D1-6D0E-C1F29B9454EA">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:21:48 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IKLIM DINGIN_2" id="9621DA8A-EF65-FA2B-1B7B-D23727046130">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:21:56 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IKLIM DINGIN_3" id="6782631C-DC40-2ED2-E9DC-FBC35943C7E0">
+<createdBy>Izull</createdBy>
+<createdTime>2023-09-25 12:22:03 UTC</createdTime>
+<ownerDesignName>tugas2.1</ownerDesignName>
+<engineerTo>
+<item key="E18E00CD-5822-6003-65E3-5EF3F234D7E9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>
