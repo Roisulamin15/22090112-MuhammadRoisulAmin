@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_6" directorySegmentName="seg_0" id="FBEB20EB-1A2D-92B0-38B1-F533F925EE32">
+<createdBy>Izull</createdBy>
+<createdTime>2023-11-17 03:08:24 UTC</createdTime>
+<ownerDesignName>no 2</ownerDesignName>
+<engineerTo>
+<item key="46D795FE-DF69-8FEA-9295-43EEF2FF33FF" value="true"/>
+</engineerTo>
+<sourcePk>3B77D668-9B64-9518-DB4B-336B97BA0C8B</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>memerlukan</nameOnSource>
+<nameOnTarget>diperlukan</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>94226424-10DA-9A93-BEC9-46FD0E5FBF94</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1EFF2961-8A6F-9CE1-C256-18D3981D3FC4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

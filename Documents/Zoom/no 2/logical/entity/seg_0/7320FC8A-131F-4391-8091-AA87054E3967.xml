@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7320FC8A-131F-4391-8091-AA87054E3967" name="KAMAR">
+<createdBy>ACER</createdBy>
+<createdTime>2023-10-17 09:16:24 UTC</createdTime>
+<ownerDesignName>no 2</ownerDesignName>
+<engineerTo>
+<item key="46D795FE-DF69-8FEA-9295-43EEF2FF33FF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_kamar" id="C9695EC4-43BC-29A1-7E3F-C56080EF5F5D">
+<createdBy>ACER</createdBy>
+<createdTime>2023-10-17 09:17:25 UTC</createdTime>
+<ownerDesignName>no 2</ownerDesignName>
+<engineerTo>
+<item key="46D795FE-DF69-8FEA-9295-43EEF2FF33FF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nama_kamar" id="F55868A8-FFF8-FCB6-41E0-782696B58101">
+<createdBy>ACER</createdBy>
+<createdTime>2023-10-17 09:17:42 UTC</createdTime>
+<ownerDesignName>no 2</ownerDesignName>
+<engineerTo>
+<item key="46D795FE-DF69-8FEA-9295-43EEF2FF33FF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="kelas" id="9800A325-BB6C-ACF1-19A5-6DA386FB3FA7">
+<createdBy>ACER</createdBy>
+<createdTime>2023-10-17 09:17:58 UTC</createdTime>
+<ownerDesignName>no 2</ownerDesignName>
+<engineerTo>
+<item key="46D795FE-DF69-8FEA-9295-43EEF2FF33FF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_perawat" id="001FBF26-67FD-68A7-A998-7812FD01A26D">
+<createdBy>Izull</createdBy>
+<createdTime>2023-11-17 03:03:45 UTC</createdTime>
+<generatorID>ABCD9181-3465-5140-DA5B-EF5C1EA70F3F</generatorID>
+<ownerDesignName>no 2</ownerDesignName>
+<engineerTo>
+<item key="46D795FE-DF69-8FEA-9295-43EEF2FF33FF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>14D24B44-E06F-3AD3-22CC-794457E02EC4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3F365285-B22C-78C8-574A-3243EE082EEC" name="KAMAR PK">
+<createdBy>ACER</createdBy>
+<createdTime>2023-10-17 09:17:40 UTC</createdTime>
+<ownerDesignName>no 2</ownerDesignName>
+<engineerTo>
+<item key="46D795FE-DF69-8FEA-9295-43EEF2FF33FF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C9695EC4-43BC-29A1-7E3F-C56080EF5F5D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

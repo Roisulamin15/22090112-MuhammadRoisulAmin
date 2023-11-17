@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1EFF2961-8A6F-9CE1-C256-18D3981D3FC4" name="RUANG RAWAT INAP">
+<createdBy>Izull</createdBy>
+<createdTime>2023-11-17 03:06:05 UTC</createdTime>
+<ownerDesignName>no 2</ownerDesignName>
+<engineerTo>
+<item key="46D795FE-DF69-8FEA-9295-43EEF2FF33FF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nomor ruangan" id="18A0F85C-DD42-D0B6-7781-84A0BC3071CB">
+<createdBy>Izull</createdBy>
+<createdTime>2023-11-17 03:06:31 UTC</createdTime>
+<ownerDesignName>no 2</ownerDesignName>
+<engineerTo>
+<item key="46D795FE-DF69-8FEA-9295-43EEF2FF33FF" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fasilitas" id="5B157838-28CD-F0BB-A0E1-8FCC9FE84175">
+<createdBy>Izull</createdBy>
+<createdTime>2023-11-17 03:06:37 UTC</createdTime>
+<ownerDesignName>no 2</ownerDesignName>
+<engineerTo>
+<item key="46D795FE-DF69-8FEA-9295-43EEF2FF33FF" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_perawat" id="4839648E-A6DB-27CB-B421-4F4406951CD4">
+<createdBy>Izull</createdBy>
+<createdTime>2023-11-17 03:09:17 UTC</createdTime>
+<generatorID>FBEB20EB-1A2D-92B0-38B1-F533F925EE32</generatorID>
+<ownerDesignName>no 2</ownerDesignName>
+<engineerTo>
+<item key="46D795FE-DF69-8FEA-9295-43EEF2FF33FF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>14D24B44-E06F-3AD3-22CC-794457E02EC4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B9F12CDD-E5DF-D892-351B-FE2AAB1FEB7C" name="RUANG RAWAT INAP PK">
+<createdBy>Izull</createdBy>
+<createdTime>2023-11-17 03:07:12 UTC</createdTime>
+<ownerDesignName>no 2</ownerDesignName>
+<engineerTo>
+<item key="46D795FE-DF69-8FEA-9295-43EEF2FF33FF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>18A0F85C-DD42-D0B6-7781-84A0BC3071CB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
