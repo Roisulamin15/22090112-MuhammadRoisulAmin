@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BD1C916A-D282-F7EA-8958-1A2A3D73698D" name="ketersediaan">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-24 17:02:52 UTC</createdTime>
+<ownerDesignName>suplemen</ownerDesignName>
+<engineerTo>
+<item key="A128DA27-E4B8-645F-3A71-F5F1E313C32C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="4EC4BA3A-7E5B-41FC-0040-5BD187829C0C">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-24 17:03:13 UTC</createdTime>
+<ownerDesignName>suplemen</ownerDesignName>
+<engineerTo>
+<item key="A128DA27-E4B8-645F-3A71-F5F1E313C32C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nama suplemen" id="404E69BA-01A4-4BEC-3AD0-4B60B86EB39F">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-24 17:03:22 UTC</createdTime>
+<ownerDesignName>suplemen</ownerDesignName>
+<engineerTo>
+<item key="A128DA27-E4B8-645F-3A71-F5F1E313C32C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="lokal" id="2E8B8A1E-5109-2FBF-DB5A-91003BC6BFB3">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-24 17:03:37 UTC</createdTime>
+<ownerDesignName>suplemen</ownerDesignName>
+<engineerTo>
+<item key="A128DA27-E4B8-645F-3A71-F5F1E313C32C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="online" id="2BC55E95-8B4C-DDD5-892D-8FD220664F5F">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-24 17:03:51 UTC</createdTime>
+<ownerDesignName>suplemen</ownerDesignName>
+<engineerTo>
+<item key="A128DA27-E4B8-645F-3A71-F5F1E313C32C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="314EF30C-3F13-6E82-9966-E8E1C6710C8A" name="ketersediaan PK">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-24 17:03:21 UTC</createdTime>
+<ownerDesignName>suplemen</ownerDesignName>
+<engineerTo>
+<item key="A128DA27-E4B8-645F-3A71-F5F1E313C32C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4EC4BA3A-7E5B-41FC-0040-5BD187829C0C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

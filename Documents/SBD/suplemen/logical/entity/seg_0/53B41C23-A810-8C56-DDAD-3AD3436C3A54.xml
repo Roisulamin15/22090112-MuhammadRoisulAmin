@@ -1,0 +1,143 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="53B41C23-A810-8C56-DDAD-3AD3436C3A54" name="Kandungan Nutrisi">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-24 16:52:38 UTC</createdTime>
+<ownerDesignName>suplemen</ownerDesignName>
+<engineerTo>
+<item key="A128DA27-E4B8-645F-3A71-F5F1E313C32C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="B3C6A5AC-29D7-3949-C928-FE8E970A0C71">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-24 16:53:06 UTC</createdTime>
+<ownerDesignName>suplemen</ownerDesignName>
+<engineerTo>
+<item key="A128DA27-E4B8-645F-3A71-F5F1E313C32C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Vitamain A" id="14B0D55A-C6C9-70A9-9C5A-437EBF688CFA">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-24 16:53:28 UTC</createdTime>
+<ownerDesignName>suplemen</ownerDesignName>
+<engineerTo>
+<item key="A128DA27-E4B8-645F-3A71-F5F1E313C32C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Attribute_1" id="F1688365-8656-589F-2067-095272D64A36">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-24 16:54:32 UTC</createdTime>
+<ownerDesignName>suplemen</ownerDesignName>
+<engineerTo>
+<item key="A128DA27-E4B8-645F-3A71-F5F1E313C32C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Vitamain D" id="F12CE4E1-AE32-64E0-2EC4-FD16D108A4F3">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-24 16:55:21 UTC</createdTime>
+<ownerDesignName>suplemen</ownerDesignName>
+<engineerTo>
+<item key="A128DA27-E4B8-645F-3A71-F5F1E313C32C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="kalsium" id="65E80665-577F-6AD0-3E3B-0A7D68B51E97">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-24 16:56:29 UTC</createdTime>
+<ownerDesignName>suplemen</ownerDesignName>
+<engineerTo>
+<item key="A128DA27-E4B8-645F-3A71-F5F1E313C32C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="zat besi" id="CD147023-699C-4C89-27AB-6EB1503E4922">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-24 16:57:39 UTC</createdTime>
+<ownerDesignName>suplemen</ownerDesignName>
+<engineerTo>
+<item key="A128DA27-E4B8-645F-3A71-F5F1E313C32C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ekstrak buah sayur" id="FBB61925-0B63-458B-E8F3-259B8F900B5E">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-24 16:57:51 UTC</createdTime>
+<ownerDesignName>suplemen</ownerDesignName>
+<engineerTo>
+<item key="A128DA27-E4B8-645F-3A71-F5F1E313C32C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="probotik" id="4E4B00C2-C4B6-6291-3032-4E1303825051">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-24 16:58:15 UTC</createdTime>
+<ownerDesignName>suplemen</ownerDesignName>
+<engineerTo>
+<item key="A128DA27-E4B8-645F-3A71-F5F1E313C32C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="384F44F8-CAFC-3A3A-B74F-63D69F2EFD4B" name="Kandungan Nutrisi PK">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-24 16:53:23 UTC</createdTime>
+<ownerDesignName>suplemen</ownerDesignName>
+<engineerTo>
+<item key="A128DA27-E4B8-645F-3A71-F5F1E313C32C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B3C6A5AC-29D7-3949-C928-FE8E970A0C71</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

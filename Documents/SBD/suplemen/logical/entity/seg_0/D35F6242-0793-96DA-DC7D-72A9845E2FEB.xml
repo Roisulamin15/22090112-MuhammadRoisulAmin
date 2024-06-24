@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D35F6242-0793-96DA-DC7D-72A9845E2FEB" name="harga">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-24 16:58:48 UTC</createdTime>
+<ownerDesignName>suplemen</ownerDesignName>
+<engineerTo>
+<item key="A128DA27-E4B8-645F-3A71-F5F1E313C32C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="96F6A2C0-1258-E4AD-A2CB-1E8B6E509256">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-24 16:59:22 UTC</createdTime>
+<ownerDesignName>suplemen</ownerDesignName>
+<engineerTo>
+<item key="A128DA27-E4B8-645F-3A71-F5F1E313C32C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nama suplemen" id="9D92BB7B-AF9A-63B8-7C9E-345B6DEC50C1">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-24 16:59:34 UTC</createdTime>
+<ownerDesignName>suplemen</ownerDesignName>
+<engineerTo>
+<item key="A128DA27-E4B8-645F-3A71-F5F1E313C32C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name=" harga suplemen" id="9E070107-E16E-68D5-81D0-9F49DD3A8020">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-24 16:59:47 UTC</createdTime>
+<ownerDesignName>suplemen</ownerDesignName>
+<engineerTo>
+<item key="A128DA27-E4B8-645F-3A71-F5F1E313C32C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID1" id="8AF4C71E-63DA-2045-836E-05A970D61D0D">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-24 17:06:22 UTC</createdTime>
+<generatorID>4DE6319C-1650-9F73-F4DA-6A93A3EDBA76</generatorID>
+<ownerDesignName>suplemen</ownerDesignName>
+<engineerTo>
+<item key="A128DA27-E4B8-645F-3A71-F5F1E313C32C" value="true"/>
+</engineerTo>
+<referedAttribute>B97F8761-FC51-5FEC-1E74-73C4ED5F1594</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="EEAF9E39-D43F-F0AD-8435-13ECDD92EEA6" name="harga PK">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-24 16:59:32 UTC</createdTime>
+<ownerDesignName>suplemen</ownerDesignName>
+<engineerTo>
+<item key="A128DA27-E4B8-645F-3A71-F5F1E313C32C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>96F6A2C0-1258-E4AD-A2CB-1E8B6E509256</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

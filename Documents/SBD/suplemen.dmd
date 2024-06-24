@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="suplemen" id="7E1ACA45-8F82-0F62-9200-D7122030307B" version="3.5">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-24 16:51:59 UTC</createdTime>
+<ownerDesignName>suplemen</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>7E1ACA45-8F82-0F62-9200-D7122030307B</designId>
+</OSDM_Design>
