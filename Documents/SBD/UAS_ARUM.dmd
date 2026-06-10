@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="UAS_ARUM" id="704ED25B-DCF5-D288-AA73-D43D3C954915" version="3.5">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-03 11:22:03 UTC</createdTime>
+<ownerDesignName>Punya arum</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>704ED25B-DCF5-D288-AA73-D43D3C954915</designId>
+</OSDM_Design>

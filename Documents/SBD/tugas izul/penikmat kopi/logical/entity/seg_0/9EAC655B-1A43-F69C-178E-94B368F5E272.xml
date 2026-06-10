@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9EAC655B-1A43-F69C-178E-94B368F5E272" name="barista">
+<createdBy>Izull</createdBy>
+<createdTime>2023-10-16 13:11:01 UTC</createdTime>
+<ownerDesignName>penikmat kopi</ownerDesignName>
+<engineerTo>
+<item key="3F563433-B225-BEB7-39C6-60E042FE27D4" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="apron" id="62537259-5691-3CFE-1A67-AF1F7B17900F">
+<createdBy>Izull</createdBy>
+<createdTime>2023-10-16 13:11:18 UTC</createdTime>
+<ownerDesignName>penikmat kopi</ownerDesignName>
+<engineerTo>
+<item key="3F563433-B225-BEB7-39C6-60E042FE27D4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="seragam" id="9370910E-37AE-B40F-52EB-3879B53620B4">
+<createdBy>Izull</createdBy>
+<createdTime>2023-10-16 13:11:22 UTC</createdTime>
+<ownerDesignName>penikmat kopi</ownerDesignName>
+<engineerTo>
+<item key="3F563433-B225-BEB7-39C6-60E042FE27D4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="alat kopi" id="DADF6B89-F11B-CCCE-8EE5-57B865235D81">
+<createdBy>Izull</createdBy>
+<createdTime>2023-10-16 13:11:27 UTC</createdTime>
+<ownerDesignName>penikmat kopi</ownerDesignName>
+<engineerTo>
+<item key="3F563433-B225-BEB7-39C6-60E042FE27D4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

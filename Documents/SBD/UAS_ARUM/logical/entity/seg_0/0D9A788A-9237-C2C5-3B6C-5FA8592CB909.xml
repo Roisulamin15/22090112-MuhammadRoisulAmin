@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0D9A788A-9237-C2C5-3B6C-5FA8592CB909" name="REKOMENDASI">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-03 11:50:33 UTC</createdTime>
+<ownerDesignName>UAS_ARUM</ownerDesignName>
+<engineerTo>
+<item key="E8A770E8-9ECD-65F1-7056-8E31368DD52A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="D63C8B85-9462-E0A1-D1B9-10C44D58789A">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-03 12:36:27 UTC</createdTime>
+<ownerDesignName>UAS_ARUM</ownerDesignName>
+<engineerTo>
+<item key="E8A770E8-9ECD-65F1-7056-8E31368DD52A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="WAKTU" id="405A05B2-AE91-343F-2EC2-017DA80AA89D">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-03 12:36:45 UTC</createdTime>
+<ownerDesignName>UAS_ARUM</ownerDesignName>
+<engineerTo>
+<item key="E8A770E8-9ECD-65F1-7056-8E31368DD52A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID1" id="E201FAC0-FE49-240D-A0E4-68027B1FEE91">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-03 12:46:42 UTC</createdTime>
+<generatorID>60768873-1F75-7985-FCA0-A5EE561504D4</generatorID>
+<ownerDesignName>UAS_ARUM</ownerDesignName>
+<engineerTo>
+<item key="E8A770E8-9ECD-65F1-7056-8E31368DD52A" value="true"/>
+</engineerTo>
+<referedAttribute>D443C517-C460-0560-3F94-BAC79FA083ED</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2F593CEC-01CD-04B4-8CAA-4CFAB2B1B57D" name="REKOMENDASI PK">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-03 12:36:41 UTC</createdTime>
+<ownerDesignName>UAS_ARUM</ownerDesignName>
+<engineerTo>
+<item key="E8A770E8-9ECD-65F1-7056-8E31368DD52A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D63C8B85-9462-E0A1-D1B9-10C44D58789A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_4" directorySegmentName="seg_0" id="2B45A01B-116E-0BC9-5F14-7E7CA44D5DE4">
+<createdBy>Izull</createdBy>
+<createdTime>2023-10-16 13:01:43 UTC</createdTime>
+<ownerDesignName>penikmat kopi</ownerDesignName>
+<engineerTo>
+<item key="3F563433-B225-BEB7-39C6-60E042FE27D4" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>mengolah</nameOnSource>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E1158F88-FDBD-8F10-D565-934B8F04DC2E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>EE2D334D-7988-E573-D128-3C39B0EA80CD</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

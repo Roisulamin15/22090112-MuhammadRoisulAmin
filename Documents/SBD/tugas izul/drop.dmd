@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="drop" id="E15362E3-80AD-85D9-A47E-1A3B48EBE4F6" version="3.5">
+<createdBy>Izull</createdBy>
+<createdTime>2023-10-16 12:48:12 UTC</createdTime>
+<ownerDesignName>drop</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>E15362E3-80AD-85D9-A47E-1A3B48EBE4F6</designId>
+</OSDM_Design>

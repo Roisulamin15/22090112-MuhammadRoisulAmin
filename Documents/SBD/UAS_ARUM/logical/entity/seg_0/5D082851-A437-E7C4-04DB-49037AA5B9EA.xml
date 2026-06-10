@@ -1,0 +1,143 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5D082851-A437-E7C4-04DB-49037AA5B9EA" name="MAKANAN">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-03 11:51:15 UTC</createdTime>
+<ownerDesignName>UAS_ARUM</ownerDesignName>
+<engineerTo>
+<item key="E8A770E8-9ECD-65F1-7056-8E31368DD52A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="7ACA6B7D-B8B6-FD72-261D-8707BDF31EB5">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-03 12:21:53 UTC</createdTime>
+<ownerDesignName>UAS_ARUM</ownerDesignName>
+<engineerTo>
+<item key="E8A770E8-9ECD-65F1-7056-8E31368DD52A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NAMA" id="E3172E00-284A-B40F-D8FF-415646D7AAF9">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-03 12:22:11 UTC</createdTime>
+<ownerDesignName>UAS_ARUM</ownerDesignName>
+<engineerTo>
+<item key="E8A770E8-9ECD-65F1-7056-8E31368DD52A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="KARBOHIDRAT" id="226FA8CB-3BA8-5DFB-D51D-FBBFBEB001AD">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-03 12:25:06 UTC</createdTime>
+<ownerDesignName>UAS_ARUM</ownerDesignName>
+<engineerTo>
+<item key="E8A770E8-9ECD-65F1-7056-8E31368DD52A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>100</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,100,3</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PROTEIN" id="E80DF215-4A80-0C25-5B4B-449CB1399539">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-03 12:33:03 UTC</createdTime>
+<ownerDesignName>UAS_ARUM</ownerDesignName>
+<engineerTo>
+<item key="E8A770E8-9ECD-65F1-7056-8E31368DD52A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>100</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,100,3</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VITAMIN" id="0DAC0C94-0E98-1C2A-5DAE-1DC5A0417291">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-03 12:34:15 UTC</createdTime>
+<ownerDesignName>UAS_ARUM</ownerDesignName>
+<engineerTo>
+<item key="E8A770E8-9ECD-65F1-7056-8E31368DD52A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LEMAK" id="96D04F45-3DC9-4DD0-6260-0A5B8F777A4B">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-03 12:34:40 UTC</createdTime>
+<ownerDesignName>UAS_ARUM</ownerDesignName>
+<engineerTo>
+<item key="E8A770E8-9ECD-65F1-7056-8E31368DD52A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>100</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,100,3</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ZAT_BESI" id="E9104A62-E0C3-6773-DB82-C632478DFC77">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-03 12:35:01 UTC</createdTime>
+<ownerDesignName>UAS_ARUM</ownerDesignName>
+<engineerTo>
+<item key="E8A770E8-9ECD-65F1-7056-8E31368DD52A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>100</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,100,3</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID1" id="B9D324AE-B2E4-280A-BD5C-CD5DDFCF6AB8">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-04 01:17:09 UTC</createdTime>
+<generatorID>5B48D78B-D223-55FE-95F8-B6977E741ED9</generatorID>
+<ownerDesignName>UAS_ARUM</ownerDesignName>
+<engineerTo>
+<item key="E8A770E8-9ECD-65F1-7056-8E31368DD52A" value="true"/>
+</engineerTo>
+<referedAttribute>D63C8B85-9462-E0A1-D1B9-10C44D58789A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="ECF7030A-ED24-157E-800B-9C8318B1303E" name="MAKANAN PK">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-03 12:22:07 UTC</createdTime>
+<ownerDesignName>UAS_ARUM</ownerDesignName>
+<engineerTo>
+<item key="E8A770E8-9ECD-65F1-7056-8E31368DD52A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7ACA6B7D-B8B6-FD72-261D-8707BDF31EB5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

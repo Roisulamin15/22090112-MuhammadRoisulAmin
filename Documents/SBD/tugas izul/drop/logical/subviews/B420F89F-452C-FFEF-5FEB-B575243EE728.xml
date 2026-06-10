@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.logical.DPVLogical" name="Logical" id="B420F89F-452C-FFEF-5FEB-B575243EE728">
+<createdBy>Izull</createdBy>
+<modifiedBy>Izull</modifiedBy>
+<createdTime>2023-10-16 12:52:20 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>true</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="9EAC655B-1A43-F69C-178E-94B368F5E272" otype="Entity" vid="F28C35E7-892A-EAF6-490A-1E33803C1FD4">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="675" y="31" width="196" height="103"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="E1158F88-FDBD-8F10-D565-934B8F04DC2E" otype="Entity" vid="D4377015-5B0E-B603-546B-4AD8788063F5">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="235" y="32" width="200" height="100"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="EE2D334D-7988-E573-D128-3C39B0EA80CD" otype="Entity" vid="10251213-7ED9-763E-ECE3-8D690D594F0A">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="462" y="204" width="190" height="93"/>
+</OView>
+</objectViews>
+<connectors>
+<Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="0042D3A2-F226-F6AF-2690-FEB8AD479562" otype="Relation" vid_source="F28C35E7-892A-EAF6-490A-1E33803C1FD4" vid_target="10251213-7ED9-763E-ECE3-8D690D594F0A">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="675" y="89"/>
+<point x="593" y="89"/>
+<point x="593" y="204"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="B6419C7D-74B8-A297-372D-50C124A0E68C" otype="Relation" vid_source="D4377015-5B0E-B603-546B-4AD8788063F5" vid_target="10251213-7ED9-763E-ECE3-8D690D594F0A">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="435" y="88"/>
+<point x="509" y="88"/>
+<point x="509" y="204"/>
+</points>
+</Connector>
+</connectors>
+</Diagram>

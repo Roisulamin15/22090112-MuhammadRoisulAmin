@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="1" id="D7BA9E7A-0DD5-53B8-F6C7-1CB0BCDF41D1" version="3.5">
+<createdBy>ACER</createdBy>
+<createdTime>2023-10-17 09:06:35 UTC</createdTime>
+<ownerDesignName>hospital</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>D7BA9E7A-0DD5-53B8-F6C7-1CB0BCDF41D1</designId>
+</OSDM_Design>

@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="95D2D4C1-FD4B-8EEF-6813-FD22BEA62C6D" name="BOBOT">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-03 11:54:37 UTC</createdTime>
+<ownerDesignName>UAS_ARUM</ownerDesignName>
+<engineerTo>
+<item key="E8A770E8-9ECD-65F1-7056-8E31368DD52A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="8958EE2A-432D-5C24-9359-21E59038E0A9">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-03 12:38:53 UTC</createdTime>
+<ownerDesignName>UAS_ARUM</ownerDesignName>
+<engineerTo>
+<item key="E8A770E8-9ECD-65F1-7056-8E31368DD52A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="WAKTU" id="6865D1EB-8BD9-EB05-0362-667FEA5D20F3">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-03 12:39:06 UTC</createdTime>
+<ownerDesignName>UAS_ARUM</ownerDesignName>
+<engineerTo>
+<item key="E8A770E8-9ECD-65F1-7056-8E31368DD52A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="W1" id="5F96707D-3248-D1AA-B846-395C95A8F47D">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-03 12:39:15 UTC</createdTime>
+<ownerDesignName>UAS_ARUM</ownerDesignName>
+<engineerTo>
+<item key="E8A770E8-9ECD-65F1-7056-8E31368DD52A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="W2" id="EFA43FC1-6705-D689-8B40-2FB0F8CE063E">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-03 12:48:07 UTC</createdTime>
+<ownerDesignName>UAS_ARUM</ownerDesignName>
+<engineerTo>
+<item key="E8A770E8-9ECD-65F1-7056-8E31368DD52A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="W3" id="10131F8D-0026-2C3C-E62C-D6C821CF41E2">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-03 12:48:16 UTC</createdTime>
+<ownerDesignName>UAS_ARUM</ownerDesignName>
+<engineerTo>
+<item key="E8A770E8-9ECD-65F1-7056-8E31368DD52A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="W4" id="A2A1E85F-C9BE-28CF-5AB8-2C5B89960556">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-03 12:48:26 UTC</createdTime>
+<ownerDesignName>UAS_ARUM</ownerDesignName>
+<engineerTo>
+<item key="E8A770E8-9ECD-65F1-7056-8E31368DD52A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID1" id="83E1DC0F-0144-CA9D-28AE-D8421A6FA040">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-03 12:52:17 UTC</createdTime>
+<generatorID>8F1617A7-1EF5-AB92-5A77-D08C64CE5624</generatorID>
+<ownerDesignName>UAS_ARUM</ownerDesignName>
+<engineerTo>
+<item key="E8A770E8-9ECD-65F1-7056-8E31368DD52A" value="true"/>
+</engineerTo>
+<referedAttribute>D443C517-C460-0560-3F94-BAC79FA083ED</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="EAD1539C-C0E5-CDFE-9B13-2E3F706AC7FF" name="BOBOT PK">
+<createdBy>Izull</createdBy>
+<createdTime>2024-06-03 12:39:04 UTC</createdTime>
+<ownerDesignName>UAS_ARUM</ownerDesignName>
+<engineerTo>
+<item key="E8A770E8-9ECD-65F1-7056-8E31368DD52A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8958EE2A-432D-5C24-9359-21E59038E0A9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
