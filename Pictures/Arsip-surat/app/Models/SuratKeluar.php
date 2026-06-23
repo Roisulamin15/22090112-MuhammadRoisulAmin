@@ -27,5 +27,15 @@ class SuratKeluar extends Model
         'penanggung_jawab_id'
     );
 }
+
+    public function pengirim()
+    {
+        return $this->belongsTo(User::class, 'pengirim_id');
+    }
+
+    public function tujuan()
+    {
+        return $this->belongsTo(User::class, 'tujuan_id');
+    }
 }
     

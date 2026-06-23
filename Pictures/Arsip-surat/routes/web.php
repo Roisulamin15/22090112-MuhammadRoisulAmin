@@ -66,6 +66,8 @@ Route::middleware(['auth', 'active'])->group(function () {
     ->name('surat-masuk.update');
     Route::get('/surat-masuk/filter', [SuratMasukController::class, 'filter']
     )->name('surat-masuk.filter');
+    Route::delete('/surat-masuk/{id}', [SuratMasukController::class, 'destroy'])
+    ->name('surat-masuk.destroy');
 
 
     /* ================= SURAT KELUAR ================= */
@@ -101,27 +103,39 @@ Route::middleware(['auth', 'active'])->group(function () {
     )->name('surat-keluar.update');
      Route::get('/surat-keluark/filter', [SuratKeluarController::class, 'filter']
     )->name('surat-keluar.filter');
+    Route::delete('/surat-keluar/{id}', [SuratKeluarController::class, 'destroy'])
+    ->name('surat-keluar.destroy');
 
 });
+/*
+|--------------------------------------------------------------------------
+| GRAFIK AREA
+|--------------------------------------------------------------------------
+*/
+
+    Route::get('/dashboard/user/{id}/grafik',[DashboardController::class, 'grafikUser']
+    )->name('dashboard.user-grafik');
 
 /*
 |--------------------------------------------------------------------------
-| ADMIN AREA
-|--------------------------------------------------------------------------
+/*
+|---------------- ADMIN AREA ----------------
 */
-Route::middleware(['auth', 'active',])->group(function () {
-
-    /* === ADMIN ONLY DELETE === */
-    Route::delete('/surat-masuk/{suratMasuk}', [SuratMasukController::class, 'destroy'])
-        ->name('surat-masuk.destroy');
-
-    Route::delete('/surat-keluar/{suratKeluar}', [SuratKeluarController::class, 'destroy'])
-        ->name('surat-keluar.destroy');
+Route::middleware(['auth', 'active'])->group(function () {
 
     /* === USER MANAGEMENT === */
     Route::get('/users', [UserManagementController::class, 'index'])->name('users.index');
     Route::get('/users/create', [UserManagementController::class, 'create'])->name('users.create');
     Route::post('/users', [UserManagementController::class, 'store'])->name('users.store');
+
     Route::patch('/users/{user}/toggle-status', [UserManagementController::class, 'toggleStatus'])
         ->name('users.toggle-status');
+
+    /* === RESET PASSWORD USER === */
+    Route::get('/users/{user}/password', [UserManagementController::class, 'editPassword'])
+        ->name('users.password.edit');
+
+    Route::put('/users/{user}/password', [UserManagementController::class, 'updatePassword'])
+        ->name('users.password.update');
+
 });

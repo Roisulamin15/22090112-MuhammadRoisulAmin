@@ -23,7 +23,9 @@
 @endif
 
 {{-- ================= HEADER ACTION ================= --}}
-<div class="flex flex-col md:flex-row md:items-center md:justify-end gap-2 mb-6">
+<div class="flex flex-col md:flex-row md:items-center md:justify-end gap-3 mb-6">
+
+    <div class="flex flex-col xl:flex-row xl:items-center xl:justify-between gap-3">
     {{-- UPLOAD OCR --}}
     <form id="ocrForm"
           method="POST"
@@ -53,8 +55,8 @@
         <input type="text"
        name="keyword"
        value="{{ request('keyword') }}"
-       placeholder="Cari perihal..."
-       class="border rounded px-3 py-2 w-64">
+       placeholder="Cari arsip surat"
+       class="border rounded px-3 py-2 w-64"> 
 
         <input type="date"
        name="tanggal"
@@ -116,6 +118,7 @@
 
 </div>
 
+</div>
 <script>
 document.getElementById('ocrFile').addEventListener('change', function () {
     if (this.files.length > 0) {
@@ -123,6 +126,8 @@ document.getElementById('ocrFile').addEventListener('change', function () {
     }
 });
 </script>
+</div>
+
 
 <script>
 document.getElementById('ocrFile').addEventListener('change', function () {
@@ -135,96 +140,172 @@ document.getElementById('ocrFile').addEventListener('change', function () {
 
 {{-- ================= DESKTOP TABLE ================= --}}
 <div class="hidden md:block">
-<table class="w-full bg-white rounded shadow">
-    <thead class="bg-gray-100">
-        <tr>
-            <th class="p-3">No</th>
-            <th class="p-3">Nomor Surat</th>
-            <th class="p-3">asal</th>
-            <th class="p-3">Perihal</th>
-            <th class="p-3">Penanggung Jawab</th>
-            <th class="p-3">Tanggal</th>
-            <th class="p-3">Jam</th>
-            <th class="p-3">Aksi</th>
-        </tr>
-    </thead>
-    <tbody>
-        @forelse($data as $row)
-        <tr class="border-t">
-            <td class="p-3 text-center">{{ $loop->iteration }}</td>
-            <td class="p-3">{{ $row->nomor_surat }}</td>
-            <td class="p-3">{{ $row->asal_surat }}</td>
-            <td class="p-3">{{ $row->perihal }}</td>
-            <td class="p-3">
-    {{ $row->penanggungJawab->nama ?? '-' }}
-</td>
-            <td class="p-3">
-                {{ \Carbon\Carbon::parse($row->tanggal_surat)->format('d M Y') }}
-            </td>
 
-            <td class="p-3">
-                {{ $row->jam ? \Carbon\Carbon::parse($row->jam)->format('H:i') : '-' }}
-            </td>
+    <div class="bg-white rounded-xl shadow overflow-hidden">
 
-            <td class="p-3">
-                <div class="flex items-center gap-3">
+        <div class="overflow-x-auto">
 
-                {{-- VIEW --}}
-                @if($row->file)
-                <a href="{{ route('surat-masuk.view', $row->id) }}"
-                target="_blank"
-                title="Lihat Surat"
-                class="hover:scale-110 transition">
-                    <img src="{{ asset('image/view.png') }}"
-                        alt="View"
-                        class="w-5 h-5">
-                </a>
+            <table class="w-full text-sm">
 
-                {{-- DOWNLOAD --}}
-                <a href="{{ route('surat-masuk.download', $row->id) }}"
-                title="Download Surat"
-                class="hover:scale-110 transition">
-                    <img src="{{ asset('image/download.png') }}"
-                        alt="Download"
-                        class="w-5 h-5">
-                </a>
-                @endif
+                <thead class="bg-gray-100 text-gray-700">
 
-                {{-- HAPUS --}}
-                @if((int)$row->penerima_id == (int)auth()->id())
+                    <tr>
 
-                <form method="POST"
-                    action="{{ route('surat-masuk.destroy', $row->id) }}"
-                    onsubmit="return confirm('Hapus surat ini?')">
+                        <th class="p-3 text-center w-16">No</th>
 
-                    @csrf
-                    @method('DELETE')
+                        <th class="p-3 text-left min-w-[300px]">
+                            Nomor Surat
+                        </th>
 
-                    <button type="submit"
-                            title="Hapus Surat"
-                            class="hover:scale-110 transition">
-                        <img src="{{ asset('image/delet.png') }}"
-                            alt="Delete"
-                            class="w-5 h-5">
-                    </button>
+                        <th class="p-3 text-left min-w-[180px]">
+                            Asal
+                        </th>
 
-                </form>
+                        <th class="p-3 text-left min-w-[200px]">
+                            Perihal
+                        </th>
 
-                @endif
+                        <th class="p-3 text-left min-w-[180px]">
+                            Penanggung Jawab
+                        </th>
 
-            </div>
-                </div>
-            </td>
-        </tr>
-        @empty
-        <tr>
-            <td colspan="6" class="p-4 text-center text-gray-500">
-                Data surat masuk belum ada
-            </td>
-        </tr>
-        @endforelse
-    </tbody>
-</table>
+                        <th class="p-3 text-center w-32">
+                            Tanggal
+                        </th>
+
+                        <th class="p-3 text-center w-24">
+                            Jam
+                        </th>
+
+                        <th class="p-3 text-center w-36">
+                            Aksi
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    @forelse($data as $row)
+
+                    <tr class="border-t hover:bg-gray-50 transition">
+
+                        <td class="p-3 text-center">
+                            {{ $loop->iteration }}
+                        </td>
+
+                        <td class="p-3">
+
+                            <div class="max-w-[320px] break-words text-sm">
+                                {{ $row->nomor_surat }}
+                            </div>
+
+                        </td>
+
+                        <td class="p-3">
+                            {{ $row->asal_surat }}
+                        </td>
+
+                        <td class="p-3">
+                            {{ $row->perihal }}
+                        </td>
+
+                        <td class="p-3">
+                            {{ $row->penanggungJawab->nama ?? '-' }}
+                        </td>
+
+                        <td class="p-3 text-center">
+                            {{ \Carbon\Carbon::parse($row->tanggal_surat)->format('d M Y') }}
+                        </td>
+
+                        <td class="p-3 text-center">
+                            {{ $row->jam
+                                ? \Carbon\Carbon::parse($row->jam)->format('H:i')
+                                : '-' }}
+                        </td>
+
+                        <td class="p-3">
+
+                            <div class="flex justify-center items-center gap-2">
+
+                                @if($row->file)
+
+                                {{-- VIEW --}}
+                                <a href="{{ route('surat-masuk.view', $row->id) }}"
+                                   target="_blank"
+                                   title="Lihat Surat"
+                                   class="w-8 h-8 rounded-lg bg-blue-100 hover:bg-blue-200 flex items-center justify-center transition">
+
+                                    <img src="{{ asset('image/view.png') }}"
+                                         class="w-4 h-4">
+
+                                </a>
+
+                                {{-- DOWNLOAD --}}
+                                <a href="{{ route('surat-masuk.download', $row->id) }}"
+                                   title="Download Surat"
+                                   class="w-8 h-8 rounded-lg bg-green-100 hover:bg-green-200 flex items-center justify-center transition">
+
+                                    <img src="{{ asset('image/download.png') }}"
+                                         class="w-4 h-4">
+
+                                </a>
+
+                                @endif
+
+                                @if((int)$row->penerima_id == (int)auth()->id())
+
+                                {{-- DELETE --}}
+                                <form method="POST"
+                                      action="{{ route('surat-masuk.destroy', $row->id) }}"
+                                      onsubmit="return confirm('Hapus surat ini?')">
+
+                                    @csrf
+                                    @method('DELETE')
+
+                                    <button type="submit"
+                                            title="Hapus Surat"
+                                            class="w-8 h-8 rounded-lg bg-red-100 hover:bg-red-200 flex items-center justify-center transition">
+
+                                        <img src="{{ asset('image/delet.png') }}"
+                                             class="w-4 h-4">
+
+                                    </button>
+
+                                </form>
+
+                                @endif
+
+                            </div>
+
+                        </td>
+
+                    </tr>
+
+                    @empty
+
+                    <tr>
+
+                        <td colspan="8"
+                            class="p-8 text-center text-gray-500">
+
+                            Data surat masuk belum ada
+
+                        </td>
+
+                    </tr>
+
+                    @endforelse
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
 </div>
 
 {{-- ================= MOBILE CARD ================= --}}

@@ -4,6 +4,8 @@
 
 @section('content')
 
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
 <form method="POST"
       action="{{ isset($surat)
             ? route('surat-keluar.update',$surat->id)
@@ -112,114 +114,43 @@
     @php
     $selectedPerihal = strtolower(old('perihal', $surat->perihal ?? ''));
 @endphp
-<select name="perihal"
-        id="perihal"
-        class="w-full border rounded px-3 py-2"
-        required>
 
-    <option value="">-- Pilih Jenis Surat --</option>
+<input type="text"
+       name="perihal"
+       id="perihal"
+       list="jenisSuratList"
+       class="w-full border rounded px-3 py-2"
+       placeholder="Ketik jenis surat..."
+       value="{{ old('perihal', $surat->perihal ?? '') }}"
+       required>
 
-    <option value="surat undangan" {{ $selectedPerihal == 'surat undangan' ? 'selected' : '' }}>
-        Surat Undangan
-    </option>
-
-    <option value="surat pemberitahuan" {{ $selectedPerihal == 'surat pemberitahuan' ? 'selected' : '' }}>
-        Surat Pemberitahuan
-    </option>
-
-    <option value="surat permohonan" {{ $selectedPerihal == 'surat permohonan' ? 'selected' : '' }}>
-        Surat Permohonan
-    </option>
-
-    <option value="surat edaran" {{ $selectedPerihal == 'surat edaran' ? 'selected' : '' }}>
-        Surat Edaran
-    </option>
-
-    <option value="surat keputusan" {{ $selectedPerihal == 'surat keputusan' ? 'selected' : '' }}>
-        Surat Keputusan
-    </option>
-
-    <option value="surat keterangan" {{ $selectedPerihal == 'surat keterangan' ? 'selected' : '' }}>
-        Surat Keterangan
-    </option>
-
-    <option value="surat tugas" {{ $selectedPerihal == 'surat tugas' ? 'selected' : '' }}>
-        Surat Tugas
-    </option>
-
-    <option value="surat perjalanan dinas" {{ $selectedPerihal == 'surat perjalanan dinas' ? 'selected' : '' }}>
-        Surat Perjalanan Dinas
-    </option>
-
-    <option value="surat peraturan" {{ $selectedPerihal == 'surat peraturan' ? 'selected' : '' }}>
-        Surat Peraturan
-    </option>
-
-    <option value="surat pengantar" {{ $selectedPerihal == 'surat pengantar' ? 'selected' : '' }}>
-        Surat Pengantar
-    </option>
-
-    <option value="surat pernyataan" {{ $selectedPerihal == 'surat pernyataan' ? 'selected' : '' }}>
-        Surat Pernyataan
-    </option>
-
-    <option value="surat kuasa" {{ $selectedPerihal == 'surat kuasa' ? 'selected' : '' }}>
-        Surat Kuasa
-    </option>
-
-    <option value="surat peringatan" {{ $selectedPerihal == 'surat peringatan' ? 'selected' : '' }}>
-        Surat Peringatan
-    </option>
-
-    <option value="surat memo" {{ $selectedPerihal == 'surat memo' ? 'selected' : '' }}>
-        Surat Memo
-    </option>
-
-    <option value="surat instruksi/perintah" {{ $selectedPerihal == 'surat instruksi/perintah' ? 'selected' : '' }}>
-        Surat Instruksi/Perintah
-    </option>
-
-    <option value="surat perjanjian" {{ $selectedPerihal == 'surat perjanjian' ? 'selected' : '' }}>
-        Surat Perjanjian
-    </option>
-
-    <option value="mou" {{ $selectedPerihal == 'mou' ? 'selected' : '' }}>
-        MoU
-    </option>
-
-    <option value="surat rekomendasi" {{ $selectedPerihal == 'surat rekomendasi' ? 'selected' : '' }}>
-        Surat Rekomendasi
-    </option>
-
-    <option value="surat balasan" {{ $selectedPerihal == 'surat balasan' ? 'selected' : '' }}>
-        Surat Balasan
-    </option>
-
-    <option value="surat pengumuman" {{ $selectedPerihal == 'surat pengumuman' ? 'selected' : '' }}>
-        Surat Pengumuman
-    </option>
-
-    <option value="nota dinas" {{ $selectedPerihal == 'nota dinas' ? 'selected' : '' }}>
-        Nota Dinas
-    </option>
-
-    <option value="berita acara" {{ $selectedPerihal == 'berita acara' ? 'selected' : '' }}>
-        Berita Acara
-    </option>
-
-    <option value="piagam-sertifikat" {{ $selectedPerihal == 'piagam-sertifikat' ? 'selected' : '' }}>
-        Piagam/Sertifikat
-    </option>
-
-    <option value="surat persetujuan" {{ $selectedPerihal == 'surat persetujuan' ? 'selected' : '' }}>
-        Surat Persetujuan
-    </option>
-
-    <option value="surat kontrak" {{ $selectedPerihal == 'surat kontrak' ? 'selected' : '' }}>
-        Surat Kontrak
-    </option>
-
-</select>
+<datalist id="jenisSuratList">
+    <option value="surat undangan">
+    <option value="surat pemberitahuan">
+    <option value="surat permohonan">
+    <option value="surat edaran">
+    <option value="surat keputusan">
+    <option value="surat keterangan">
+    <option value="surat tugas">
+    <option value="surat perjalanan dinas">
+    <option value="surat peraturan">
+    <option value="surat pengantar">
+    <option value="surat pernyataan">
+    <option value="surat kuasa">
+    <option value="surat peringatan">
+    <option value="surat memo">
+    <option value="surat instruksi/perintah">
+    <option value="surat perjanjian">
+    <option value="mou">
+    <option value="surat rekomendasi">
+    <option value="surat balasan">
+    <option value="surat pengumuman">
+    <option value="nota dinas">
+    <option value="berita acara">
+    <option value="piagam-sertifikat">
+    <option value="surat persetujuan">
+    <option value="surat kontrak">
+</datalist>
 
     {{-- hidden file dari OCR --}}
     <input type="hidden" name="uploaded_file_name" value="{{ $ocrFile }}">
@@ -237,39 +168,97 @@
         </div>
     @endif
 
-    <select name="penanggung_jawab_id"
-        class="w-full border rounded px-3 py-2">
+    <input type="text"
+       id="penanggung_jawab_search"
+       list="penanggungJawabList"
+       class="w-full border rounded px-3 py-2"
+       placeholder="Ketik nama penanggung jawab"
+       value="{{ isset($surat) && $surat->penanggungJawab
+            ? $surat->penanggungJawab->nama.' - '.$surat->penanggungJawab->jabatan
+            : '' }}">
+            
+    <p id="pjError" class="text-red-500 text-sm mt-1 hidden">
+    Penanggung jawab tidak ditemukan.
+    </p>
 
-    <option value="">
-        -- Pilih Penanggung Jawab --
-    </option>
+    @error('penanggung_jawab_id')
+    <p class="text-red-500 text-sm mt-1">
+        {{ $message }}
+    </p>
+@enderror
 
-    @foreach($penanggungJawab as $pj)
+    <input type="hidden"
+        name="penanggung_jawab_id"
+        id="penanggung_jawab_id"
+        value="{{ old('penanggung_jawab_id', $surat->penanggung_jawab_id ?? '') }}">
 
-        <option value="{{ $pj->id }}"
-    {{ old(
-        'penanggung_jawab_id',
-        $surat->penanggung_jawab_id ?? ''
-    ) == $pj->id ? 'selected' : '' }}>
-            {{ $pj->nama }} - {{ $pj->jabatan }}
-        </option>
-
-    @endforeach
-
-</select>
+    <datalist id="penanggungJawabList">
+        @foreach($penanggungJawab as $pj)
+            <option
+                data-id="{{ $pj->id }}"
+                value="{{ $pj->nama }} - {{ $pj->jabatan }}">
+            </option>
+        @endforeach
+    </datalist>
 
     {{-- Upload manual (opsional, override) --}}
     <div class="space-y-1">
         <div class="text-sm text-gray-700">
             {{ $ocrFile ? 'Ganti file (opsional):' : 'Upload file (opsional):' }}
         </div>
-        <input type="file" name="file" class="w-full">
+        <input type="file"name="file"id="fileInput"class="w-full">
     </div>
 
 
     <button type="submit"
             class="mt-4 px-4 py-2 bg-[#7A1E1E] text-white rounded hover:bg-[#4B0F0F]">
-{{ isset($surat) ? 'Update Surat' : 'Kirim Surat' }}    </button>
+    {{ isset($surat) ? 'Update Surat' : 'Kirim Surat' }}</button>
+
+    </form>
+
+{{-- PREVIEW --}}
+<div class="bg-white p-4 rounded shadow">
+
+    <h3 class="font-semibold mb-3">
+        Preview Dokumen
+    </h3>
+
+    <div id="previewContainer"
+         class="border rounded bg-gray-50 min-h-[500px] flex items-center justify-center">
+
+        @if($ocrFile)
+
+            @php
+                $ext = strtolower(pathinfo($ocrFile, PATHINFO_EXTENSION));
+            @endphp
+
+            @if(in_array($ext,['jpg','jpeg','png']))
+                <img src="{{ asset('uploads/surat_keluar/'.$ocrFile) }}"
+                     class="max-h-[700px] max-w-full object-contain">
+            @elseif($ext == 'pdf')
+                <iframe
+                    src="{{ asset('uploads/surat_keluar/'.$ocrFile) }}"
+                    class="w-full h-[700px]">
+                </iframe>
+            @else
+                <div class="text-gray-500">
+                    {{ $ocrFile }}
+                </div>
+            @endif
+
+        @else
+
+            <span class="text-gray-400">
+                Belum ada file dipilih
+            </span>
+
+        @endif
+
+    </div>
+
+</div>
+
+</div>
 
 </form>
 
@@ -388,7 +377,7 @@ function updateSelection() {
 
 }
 
-document.getElementById('perihal').addEventListener('change', function () {
+document.getElementById('perihal').addEventListener('input', function () {
 
     let jenis = this.value;
 
@@ -423,6 +412,96 @@ document.getElementById('perihal').addEventListener('change', function () {
         tahun;
 
     document.getElementById('preview_nomor').value = nomor;
+
+});
+
+    const fileInput =
+    document.getElementById('fileInput');
+
+const previewContainer =
+    document.getElementById('previewContainer');
+
+if(fileInput){
+
+    fileInput.addEventListener('change', function(){
+
+        const file = this.files[0];
+
+        if(!file) return;
+
+        const url =
+            URL.createObjectURL(file);
+
+        if(file.type.startsWith('image/')){
+
+            previewContainer.innerHTML = `
+                <img src="${url}"
+                     class="max-h-[700px] max-w-full object-contain">
+            `;
+
+        }
+        else if(file.type === 'application/pdf'){
+
+            previewContainer.innerHTML = `
+                <iframe
+                    src="${url}"
+                    class="w-full h-[700px]">
+                </iframe>
+            `;
+
+        }
+        else{
+
+            previewContainer.innerHTML = `
+                <div class="text-center">
+                    <div class="font-semibold">
+                        ${file.name}
+                    </div>
+                    <div class="text-gray-500">
+                        Preview tidak tersedia
+                    </div>
+                </div>
+            `;
+
+        }
+
+    });
+
+}
+
+const pjSearch = document.getElementById('penanggung_jawab_search');
+const pjId = document.getElementById('penanggung_jawab_id');
+const pjError = document.getElementById('pjError');
+
+pjSearch.addEventListener('input', function () {
+
+    const options =
+        document.querySelectorAll('#penanggungJawabList option');
+
+    let ditemukan = false;
+
+    pjId.value = '';
+
+    options.forEach(option => {
+
+        if (option.value === this.value) {
+
+            pjId.value = option.dataset.id;
+            ditemukan = true;
+
+        }
+
+    });
+
+    if (this.value !== '' && !ditemukan) {
+
+        pjError.classList.remove('hidden');
+
+    } else {
+
+        pjError.classList.add('hidden');
+
+    }
 
 });
 

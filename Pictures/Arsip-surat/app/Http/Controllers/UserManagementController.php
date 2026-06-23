@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use App\Models\ActivityLog;
 
+
 class UserManagementController extends Controller
 {
     public function index()
@@ -66,5 +67,29 @@ class UserManagementController extends Controller
     return back()->with('success', 'Status user berhasil diperbarui');
 }
 
+    public function editPassword(User $user)
+{
+    return view('users.password', compact('user'));
+}
+
+public function updatePassword(Request $request, User $user)
+{
+    $request->validate([
+        'password' => 'required|min:6|confirmed'
+    ]);
+
+    $user->update([
+        'password' => Hash::make($request->password)
+    ]);
+
+    ActivityLog::create([
+        'user_id' => auth()->id(),
+        'activity' => 'Memperbarui password user: ' . $user->email
+    ]);
+
+    return redirect()
+        ->route('users.index')
+        ->with('success', 'Password user berhasil diperbarui');
+}
     }
 

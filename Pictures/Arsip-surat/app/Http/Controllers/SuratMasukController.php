@@ -12,18 +12,25 @@ use Illuminate\Support\Facades\Process  ;
 class SuratMasukController extends Controller
 {
     // ================== INDEX + SEARCH ==================
-   public function index(Request $request)
+ public function index(Request $request)
 {
     $keyword = $request->keyword;
     $tanggal = $request->tanggal;
 
-    $data = SuratMasuk::where('penerima_id', auth()->id())
+    $data = SuratMasuk::with('pengirim')
+        ->where('penerima_id', auth()->id())
 
         ->when($keyword, function ($query) use ($keyword) {
             $query->where(function ($q) use ($keyword) {
+
                 $q->where('perihal', 'like', "%{$keyword}%")
+                  ->orWhere('nomor_surat', 'like', "%{$keyword}%")
                   ->orWhere('asal_surat', 'like', "%{$keyword}%")
-                  ->orWhere('nomor_surat', 'like', "%{$keyword}%");
+
+                  ->orWhereHas('pengirim', function ($user) use ($keyword) {
+                      $user->where('name', 'like', "%{$keyword}%");
+                  });
+
             });
         })
 
@@ -41,19 +48,39 @@ class SuratMasukController extends Controller
     ));
 }
 
-    //====filter jenis surat======
     public function filter(Request $request)
 {
-    $jenis = $request->jenis;
+    $jenis = strtolower(trim($request->jenis));
 
     $data = SuratMasuk::where('penerima_id', auth()->id())
+
         ->when($jenis, function ($query) use ($jenis) {
-            $query->where('perihal', $jenis);
+
+            $kata = str_replace('surat ', '', $jenis);
+
+            $query->where(function ($q) use ($jenis, $kata) {
+
+                $q->whereRaw(
+                    'LOWER(perihal) LIKE ?',
+                    ["%{$jenis}%"]
+                )
+
+                ->orWhereRaw(
+                    'LOWER(perihal) LIKE ?',
+                    ["%{$kata}%"]
+                );
+
+            });
+
         })
+
         ->orderBy('tanggal_surat', 'desc')
         ->get();
 
-    return view('surat_masuk.index', compact('data'));
+    return view('surat_masuk.index', compact(
+        'data',
+        'jenis'
+    ));
 }
 
     // ================== CREATE ==================
@@ -112,7 +139,7 @@ class SuratMasukController extends Controller
         // Setelah store, biasanya cukup redirect dengan flash success.
         return redirect()
             ->route('surat-masuk.index')
-            ->with('success', 'Surat masuk berhasil disimpan.')
+            ->with('success', 'Surat masuk berhasil disimpan nih.')
             ->with([
                 'prefill' => [],                 // kosongkan prefill setelah sukses simpan
                 'uploaded_file_name' => $fileName, // kalau mau tetap ada, boleh
@@ -146,13 +173,35 @@ class SuratMasukController extends Controller
 }
 
     // ================== DOWNLOAD FILE ==================
-    public function download($id)
+   public function download($id)
 {
     $surat = SuratMasuk::findOrFail($id);
 
-    return response()->download(
-        public_path('uploads/surat_keluar/'.$surat->file)
-    );
+    $path = public_path('uploads/surat_masuk/'.$surat->file);
+
+    if (!file_exists($path)) {
+        return back()->with('error', 'File tidak ditemukan');
+    }
+
+    return response()->download($path);
+}
+
+    //=================== view ================
+    public function viewFile($id)
+{
+    $surat = SuratMasuk::findOrFail($id);
+
+    $path = public_path('uploads/surat_masuk/'.$surat->file);
+
+    if (!file_exists($path)) {
+        return back()->with('error', 'File tidak ditemukan');
+    }
+
+    $surat->update([
+        'is_read' => true
+    ]);
+
+    return response()->file($path);
 }
 
     // ================== OCR UPLOAD ==================

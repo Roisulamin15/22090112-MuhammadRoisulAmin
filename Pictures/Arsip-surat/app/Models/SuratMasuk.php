@@ -27,4 +27,14 @@ class SuratMasuk extends Model
     );
 }
 
+public function pengirim()
+{
+    return $this->belongsTo(User::class, 'pengirim_id');
+}
+
+public function penerima()
+{
+    return $this->belongsTo(User::class, 'penerima_id');
+}
+
 }

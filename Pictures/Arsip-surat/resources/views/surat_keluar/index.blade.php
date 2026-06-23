@@ -31,23 +31,19 @@
           action="{{ route('surat-keluar.index') }}"
           class="flex flex-wrap gap-2">
 
-        <input type="text"
+         <input type="text"
                name="keyword"
                value="{{ request('keyword') }}"
                placeholder="Cari perihal..."
-               class="border rounded px-3 py-2 w-64">
+               class="border rounded px-3 py-2 w-64"> 
 
-        <button type="submit"
-                class="px-4 py-2 bg-[#7A1E1E] text-white rounded">
-            Cari
-        </button>
-
-        @if(request('keyword'))
+         @if(request('keyword'))
             <a href="{{ route('surat-keluar.index') }}"
                class="px-4 py-2 bg-gray-300 rounded">
                 Reset
             </a>
-        @endif
+        @endif 
+        
     </form>
 
     {{-- FILTER TANGGAL --}}
@@ -62,7 +58,7 @@
 
         <button type="submit"
                 class="px-4 py-2 bg-[#7A1E1E] text-white rounded">
-            Filter
+            Cari
         </button>
 
     </form>
@@ -119,117 +115,183 @@ document.getElementById('ocrFile').addEventListener('change', function () {
 </script>
     
 
-<table class="w-full bg-white rounded shadow">
-    <thead class="bg-gray-100">
-        <tr>
-            <th class="p-3">No</th>
-            <th class="p-3">Nomor Surat</th>
-            <th class="p-3">Tujuan</th>
-            <th class="p-3">Perihal</th>
-            <th class="p-3">Penanggung Jawab</th>
-            <th class="p-3">Tanggal</th>
-            <th class="p-3">Jam</th>
-            <th class="p-3">Status</th>
-            <th class="p-3">Aksi</th>
+<div class="bg-white rounded-xl shadow-sm overflow-hidden">
 
-        </tr>
-    </thead>
-    <tbody>
-        @forelse($data as $row)
-        <tr class="border-t">
-            <td class="p-3">{{ $loop->iteration }}</td>
-            <td class="p-3">{{ $row->nomor_surat }}</td>
-            <td class="p-3">{{ $row->tujuan_surat }}</td>
-            <td class="p-3">{{ $row->perihal }}</td>
-            <td class="p-3"> {{ $row->penanggungJawab->nama ?? '-' }}</td>
-            <td class="p-3">{{ $row->tanggal_surat }}</td>
-            <td class="p-3">{{ $row->jam ? \Carbon\Carbon::parse($row->jam)->format('H:i') : '-' }}</td>
-            <td class="p-3 text-center">
+    <div class="overflow-x-auto">
+
+        <table class="w-full text-sm">
+
+            <thead class="bg-gray-50 border-b">
+                <tr>
+
+                    <th class="px-4 py-3 text-center font-semibold text-gray-700">
+                        No
+                    </th>
+
+                    <th class="px-4 py-3 text-left font-semibold text-gray-700">
+                        Nomor Surat
+                    </th>
+
+                    <th class="px-4 py-3 text-left font-semibold text-gray-700">
+                        Tujuan
+                    </th>
+
+                    <th class="px-4 py-3 text-left font-semibold text-gray-700">
+                        Perihal
+                    </th>
+
+                    <th class="px-4 py-3 text-left font-semibold text-gray-700">
+                        Penanggung Jawab
+                    </th>
+
+                    <th class="px-4 py-3 text-center font-semibold text-gray-700">
+                        Tanggal
+                    </th>
+
+                    <th class="px-4 py-3 text-center font-semibold text-gray-700">
+                        Jam
+                    </th>
+
+                    <th class="px-4 py-3 text-center font-semibold text-gray-700">
+                        Status
+                    </th>
+
+                    <th class="px-4 py-3 text-center font-semibold text-gray-700">
+                        Aksi
+                    </th>
+
+                </tr>
+            </thead>
+
+           <tbody>
+
+@forelse($data as $row)
+
+<tr class="border-t hover:bg-gray-50 transition">
+
+    <td class="p-3 text-center">
+        {{ $loop->iteration }}
+    </td>
+
+    <td class="p-3">
+        <div class="max-w-[320px] break-words text-sm">
+            {{ $row->nomor_surat }}
+        </div>
+    </td>
+
+    <td class="p-3">
+        {{ $row->tujuan_surat }}
+    </td>
+
+    <td class="p-3">
+        {{ $row->perihal }}
+    </td>
+
+    <td class="p-3">
+        {{ $row->penanggungJawab->nama ?? '-' }}
+    </td>
+
+    <td class="p-3 text-center">
+        {{ \Carbon\Carbon::parse($row->tanggal_surat)->format('d M Y') }}
+    </td>
+
+    <td class="p-3 text-center">
+        {{ $row->jam ? \Carbon\Carbon::parse($row->jam)->format('H:i') : '-' }}
+    </td>
+
+    <td class="p-3 text-center">
 
         @if($row->is_read)
-
             <img src="{{ asset('image/mata_putih.png') }}"
-                alt="Sudah Dibaca"
-                class="w-6 h-6 mx-auto">
-
+                 class="w-5 h-5 mx-auto">
         @else
-
             <img src="{{ asset('image/mata_hitam.png') }}"
-                alt="Belum Dibaca"
-                class="w-6 h-6 mx-auto">
-
+                 class="w-5 h-5 mx-auto">
         @endif
 
     </td>
-            
-<td class="p-3">
-    <div class="flex items-center gap-3">
 
-        {{-- VIEW --}}
-@if($row->file)
-<a href="{{ route('surat-keluar.view', $row->id) }}"
-   target="_blank"
-   title="Lihat Surat"
-   class="hover:scale-110 transition">
-    <img src="{{ asset('image/view.png') }}"
-         alt="View"
-         class="w-5 h-5">
-</a>
+    <td class="p-3">
 
-{{-- DOWNLOAD --}}
-<a href="{{ route('surat-keluar.download', $row->id) }}"
-   title="Download Surat"
-   class="hover:scale-110 transition">
-    <img src="{{ asset('image/download.png') }}"
-         alt="Download"
-         class="w-5 h-5">
-</a>
-@endif
+        <div class="flex justify-center items-center gap-2">
 
-{{-- HAPUS --}}
-@if((int)$row->pengirim_id == (int)auth()->id())
+            @if($row->file)
 
-<form method="POST"
-      action="{{ route('surat-keluar.destroy', $row->id) }}"
-      onsubmit="return confirm('Hapus surat ini?')">
+            <a href="{{ route('surat-keluar.view', $row->id) }}"
+               target="_blank"
+               title="Lihat Surat"
+               class="w-8 h-8 rounded-lg bg-blue-100 hover:bg-blue-200 flex items-center justify-center transition">
 
-    @csrf
-    @method('DELETE')
+                <img src="{{ asset('image/view.png') }}"
+                     class="w-4 h-4">
 
-    <button type="submit"
-            title="Hapus Surat"
-            class="hover:scale-110 transition">
-        <img src="{{ asset('image/delet.png') }}"
-             alt="Delete"
-             class="w-5 h-5">
-    </button>
+            </a>
 
-</form>
+            <a href="{{ route('surat-keluar.download', $row->id) }}"
+               title="Download Surat"
+               class="w-8 h-8 rounded-lg bg-green-100 hover:bg-green-200 flex items-center justify-center transition">
 
-@endif
+                <img src="{{ asset('image/download.png') }}"
+                     class="w-4 h-4">
 
-    <a href="{{ route('surat-keluar.edit', $row->id) }}"
-   title="Edit Surat"
-   class="hover:scale-110 transition">
-    <img src="{{ asset('image/edit.png') }}"
-         alt="Edit"
-         class="w-5 h-5">
-</a>
+            </a>
 
+            @endif
+
+            <a href="{{ route('surat-keluar.edit', $row->id) }}"
+               title="Edit Surat"
+               class="w-8 h-8 rounded-lg bg-yellow-100 hover:bg-yellow-200 flex items-center justify-center transition">
+
+                <img src="{{ asset('image/edit.png') }}"
+                     class="w-4 h-4">
+
+            </a>
+
+            @if((int)$row->pengirim_id == (int)auth()->id())
+
+            <form method="POST"
+                  action="{{ route('surat-keluar.destroy', $row->id) }}"
+                  onsubmit="return confirm('Hapus surat ini?')">
+
+                @csrf
+                @method('DELETE')
+
+                <button type="submit"
+                        title="Hapus Surat"
+                        class="w-8 h-8 rounded-lg bg-red-100 hover:bg-red-200 flex items-center justify-center transition">
+
+                    <img src="{{ asset('image/delet.png') }}"
+                         class="w-4 h-4">
+
+                </button>
+
+            </form>
+
+            @endif
+
+        </div>
+
+    </td>
+
+</tr>
+
+@empty
+
+<tr>
+    <td colspan="9"
+        class="p-8 text-center text-gray-500">
+        Data surat keluar belum ada
+    </td>
+</tr>
+
+@endforelse
+
+</tbody>
+
+        </table>
 
     </div>
-</td>
 
-
-        </tr>
-        @empty
-        <tr>
-            <td colspan="6" class="p-4 text-center text-gray-500">
-                Data surat keluar belum ada
-            </td>
-        </tr>
-        @endforelse
-    </tbody>
-</table>
+</div>
 
 @endsection

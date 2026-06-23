@@ -51,14 +51,18 @@ class SuratKeluarController extends Controller
     $keyword = $request->keyword;
     $tanggal = $request->tanggal;
 
-    $data = SuratKeluar::where('pengirim_id', auth()->id())
+    $data = SuratKeluar::with('tujuan')
+        ->where('pengirim_id', auth()->id())
 
         ->when($keyword, function ($query) use ($keyword) {
             $query->where(function ($q) use ($keyword) {
 
                 $q->where('perihal', 'like', "%{$keyword}%")
-                  ->orWhere('tujuan_surat', 'like', "%{$keyword}%")
-                  ->orWhere('nomor_surat', 'like', "%{$keyword}%");
+                  ->orWhere('nomor_surat', 'like', "%{$keyword}%")
+
+                  ->orWhereHas('tujuan', function ($user) use ($keyword) {
+                      $user->where('name', 'like', "%{$keyword}%");
+                  });
 
             });
         })
@@ -77,19 +81,39 @@ class SuratKeluarController extends Controller
     ));
 }
 
- //====filter jenis surat======
-   public function filter(Request $request)
+ public function filter(Request $request)
 {
-    $jenis = $request->jenis;
+    $jenis = strtolower(trim($request->jenis));
 
     $data = SuratKeluar::where('pengirim_id', auth()->id())
+
         ->when($jenis, function ($query) use ($jenis) {
-            $query->where('perihal', $jenis);
+
+            $kata = str_replace('surat ', '', $jenis);
+
+            $query->where(function ($q) use ($jenis, $kata) {
+
+                $q->whereRaw(
+                    'LOWER(perihal) LIKE ?',
+                    ["%{$jenis}%"]
+                )
+
+                ->orWhereRaw(
+                    'LOWER(perihal) LIKE ?',
+                    ["%{$kata}%"]
+                );
+
+            });
+
         })
+
         ->orderBy('tanggal_surat', 'desc')
         ->get();
 
-    return view('surat_keluar.index', compact('data'));
+    return view('surat_keluar.index', compact(
+        'data',
+        'jenis'
+    ));
 }
 
     // ================== CREATE ==================
@@ -128,10 +152,14 @@ public function create()
         'tujuan_id.*' => 'exists:users,id',
         'tanggal_surat' => 'required|date',
         'perihal' => 'required',
-        'penanggung_jawab_id' => 'nullable|exists:penanggung_jawabs,id',
+        'penanggung_jawab_id' => ['required','exists:penanggung_jawabs,id'],
         'file' => 'nullable|mimes:pdf,jpg,jpeg,png,xlsx,xls,csv|max:4096',
         'uploaded_file_name' => 'nullable|string',
-    ]);
+    ],
+    [
+    'penanggung_jawab_id.required' => 'Penanggung jawab harus dipilih.',
+    'penanggung_jawab_id.exists' => 'Penanggung jawab tidak ditemukan.',
+]);
 
     $sender = auth()->user();
 
@@ -411,7 +439,16 @@ private function saveSurat($request, $sender, $userTujuan, $nomorSurat, $fileNam
         abort(403);
     }
 
-    // update surat keluar yang dipilih
+    $request->validate([
+        'tanggal_surat' => 'required|date',
+        'perihal' => 'required',
+        'penanggung_jawab_id' => 'required|exists:penanggung_jawabs,id',
+    ], [
+        'penanggung_jawab_id.required' => 'Penanggung jawab harus dipilih.',
+        'penanggung_jawab_id.exists' => 'Penanggung jawab tidak ditemukan.',
+    ]);
+
+    // update surat keluar
     $surat->update([
         'tanggal_surat' => $request->tanggal_surat,
         'jam' => $request->jam,
